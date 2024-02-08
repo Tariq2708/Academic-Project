@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Questions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Answer Questions</h1>
+        <form action="{{ url_for('answer') }}" method="post">
+            <p>Test Name: {{ tname }}</p>
+            <p>Subject Name: {{ sname }}</p>
+            <label for="a1">Question 1: </label><br>
+            <textarea id="a1" name="a1" rows="4" cols="50" required></textarea><br><br>
+            <label for="a2">Question 2: </label><br>
+            <textarea id="a2" name="a2" rows="4" cols="50" required></textarea><br><br>
+            <label for="a3">Question 3: </label><br>
+            <textarea id="a3" name="a3" rows="4" cols="50" required></textarea><br><br>
+            <label for="a4">Question 4: </label><br>
+            <textarea id="a4" name="a4" rows="4" cols="50" required></textarea><br><br>
+            <label for="a5">Question 5: </label><br>
+            <textarea id="a5" name="a5" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">Submit Answers</button>
+        </form>
+    </div>
+</body>
+</html>

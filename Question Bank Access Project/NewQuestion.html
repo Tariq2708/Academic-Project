@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Question</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Question</h1>
+        <form action="{{ url_for('NewExam1') }}" method="post">
+            <label for="t1">Exam Name:</label>
+            <input type="text" id="t1" name="t1" required><br><br>
+            <label for="t2">Subject Name:</label>
+            <input type="text" id="t2" name="t2" required><br><br>
+            <label for="t3">Date:</label>
+            <input type="date" id="t3" name="t3" required><br><br>
+            <label for="s1">Degree:</label>
+            <input type="text" id="s1" name="s1" required><br><br>
+            <label for="s2">Department:</label>
+            <input type="text" id="s2" name="s2" required><br><br>
+            <label for="s3">Year:</label>
+            <input type="text" id="s3" name="s3" required><br><br>
+
+            <label for="q1">Question 1:</label>
+            <textarea id="q1" name="q1" required></textarea><br><br>
+            <label for="a1">Answer 1:</label>
+            <textarea id="a1" name="a1" required></textarea><br><br>
+
+            <label for="q2">Question 2:</label>
+            <textarea id="q2" name="q2" required></textarea><br><br>
+            <label for="a2">Answer 2:</label>
+            <textarea id="a2" name="a2" required></textarea><br><br>
+
+            <label for="q3">Question 3:</label>
+            <textarea id="q3" name="q3" required></textarea><br><br>
+            <label for="a3">Answer 3:</label>
+            <textarea id="a3" name="a3" required></textarea><br><br>
+
+            <label for="q4">Question 4:</label>
+            <textarea id="q4" name="q4" required></textarea><br><br>
+            <label for="a4">Answer 4:</label>
+            <textarea id="a4" name="a4" required></textarea><br><br>
+
+            <label for="q5">Question 5:</label>
+            <textarea id="q5" name="q5" required></textarea><br><br>
+            <label for="a5">Answer 5:</label>
+            <textarea id="a5" name="a5" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

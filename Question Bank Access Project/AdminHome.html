@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Admin Home</h1>
+        <p>This is the admin dashboard where you can manage various aspects of the application.</p>
+        <ul>
+            <li><a href="{{ url_for('AdminStudentInfo') }}">View Student Information</a></li>
+            <li><a href="{{ url_for('NewQuestion') }}">Add New Question</a></li>
+            <!-- Add more links or buttons as needed -->
+        </ul>
+    </div>
+</body>
+</html>

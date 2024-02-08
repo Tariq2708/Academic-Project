@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ data[0][1] }}</h1>
+        <p>Your Registration Number: {{ data[0][0] }}</p>
+        <p>Your Gender: {{ data[0][2] }}</p>
+        <p>Your Age: {{ data[0][3] }}</p>
+        <p>Your Email: {{ data[0][4] }}</p>
+        <p>Your Phone Number: {{ data[0][5] }}</p>
+        <p>Your Address: {{ data[0][6] }}</p>
+        <p>Your Degree: {{ data[0][7] }}</p>
+        <p>Your Department: {{ data[0][8] }}</p>
+        <p>Your Year: {{ data[0][9] }}</p>
+        <a href="{{ url_for('Test') }}">Start Test</a>
+        <a href="{{ url_for('StudentUploadInfo') }}">Uploaded Assignments</a>
+        <a href="{{ url_for('Result') }}">View Results</a>
+    </div>
+</body>
+</html>
